@@ -70,7 +70,7 @@ class Header extends Component {
                   download
                   target="_blank"
                 >
-                  <i className="fa fa-download"> </i> Resume
+                  <i className="fa fa-download"> </i> Education
                 </a>
               </ul>
             </Fade>
