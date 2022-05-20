@@ -14,94 +14,132 @@ class Resume extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const skillmessage = this.props.data.skillmessage;
-    const education = this.props.data.education.map(function (education) {
-      return (
-        <div key={education.school}>
-          <h3>{education.school}</h3>
+    const education = (
+      <>
+        <div>
+          <h3>Virginia Polytechnic Insitute and State University</h3>
           <p className="info">
-            {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
+            Masters in Computer Science
+            <em className="date" style={{ float: "right" }}>
+              Graduation: May 2023 (Expected)
+            </em>
           </p>
-          <p>{education.description}</p>
+          <ul>
+            <li>
+              <strong>Thesis topic:</strong> Software Engineering and Digital
+              Education
+            </li>
+            <li>TA for following courses:</li>
+            <ul>
+              <li>Fall 2021: CS 3114 Data Structures and Algorithms</li>
+              <li>
+                Spring 2022: CS 5040 Ethics and Professionalism in Computer
+                Science
+              </li>
+            </ul>
+          </ul>
+          {/* <p className="info">Fully funded Masters thesis.</p> */}
         </div>
-      );
-    });
+        <br></br>
+        <div>
+          <h3>Troy University</h3>
+          <p className="info">
+            Bachelors in Computer Science
+            <em className="date" style={{ float: "right" }}>
+              Graduation: May 2018
+            </em>
+          </p>
+          <ul>
+            <li>
+              <strong>Chancellors Award:</strong>
+              <ul>
+                Full tuition scholarship for 4 years of undergraduate degree
+              </ul>
+            </li>
+            <li>
+              <strong>President of Computer Science Club</strong>
+              <ul>
+                Organized first Tech Career Fair, held hands on tech sessions
+                and represented university in hackathon
+              </ul>
+            </li>
+            <li>
+              <strong>Hackathon Winner at Georgia State University</strong>
+            </li>
+            <ul>
+              <li>
+                Created an app using Java, XML and android studio that enabled a
+                phone to emulate a shipping package to track the motion and
+                shock on the package using accelerometers which helped to detect
+                any sudden movements in x, y, z axis and record the location to
+                inform sender and receiver about the potential cause.
+                <a href="http://devpost.com/software/shock-detector">
+                  {"  "}
+                  Details
+                </a>
+              </li>
+              <li>Awarded an internship with General Electric (GE Digital)</li>
+            </ul>
+            <li>
+              <strong>Resident Director</strong>{" "}
+              <ul>
+                Led the Resident Assistants and Troy University international
+                dorm, Pace Hall
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </>
+    );
 
     const work = this.props.data.work.map(function (work) {
       return (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
-          <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-          </p>
-          <p>{work.description}</p>
-        </div>
-      );
-    });
-
-    const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
-      const width = skills.level;
-
-      return (
-        <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
+        <>
+          <div key={work.company}>
+            <h3>{work.company}</h3>
+            <p className="info">
+              {work.title}
+              <span>&bull;</span> <em className="date">{work.years}</em>
+            </p>
+            <p>{work.description}</p>
+          </div>
+        </>
       );
     });
 
     return (
-      <section id="resume">
-        <Slide left duration={1300}>
-          <div className="row education">
-            <div className="three columns header-col">
-              <h1>
-                <span>Education</span>
-              </h1>
-            </div>
+      <>
+        <section id="resume">
+          <Slide left duration={2000}>
+            <div className="row education">
+              <div className="three columns header-col">
+                <h1 style={{ color: "#313131" }}>
+                  <span>Education</span>
+                </h1>
+              </div>
 
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">{education}</div>
+              <div className="nine columns main-col">
+                <div className="row item">
+                  <div className="twelve columns">{education}</div>
+                </div>
               </div>
             </div>
-          </div>
-        </Slide>
-
-        <Slide left duration={1300}>
-          <div className="row work">
-            <div className="three columns header-col">
-              <h1>
-                <span>Work</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">{work}</div>
-          </div>
-        </Slide>
-
-        <Slide left duration={1300}>
-          <div className="row skill">
-            <div className="three columns header-col">
-              <h1>
-                <span>Skills</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">
-              <p>{skillmessage}</p>
-
-              <div className="bars">
-                <ul className="skills">{skills}</ul>
+          </Slide>
+        </section>
+        {/* <section id="about">
+          <Slide left duration={1300}>
+            <div className="row work">
+              <div className="three columns header-col">
+                <h1>
+                  <span>Work</span>
+                </h1>
               </div>
+
+              <div className="nine columns main-col">{work}</div>
             </div>
-          </div>
-        </Slide>
-      </section>
+          </Slide>
+        </section> */}
+      </>
     );
   }
 }
