@@ -73,6 +73,15 @@ class Header extends Component {
                   <i className="fa fa-download"> </i> Resume
                 </a>
               </ul>
+              {/* #F1E2B0 */}
+              <a
+                href="mailto: sahilhamal@vt.edu"
+                className="social"
+                download
+                target="_blank"
+              >
+                <i className="fa fa-envelope"> </i> Contact
+              </a>
             </Fade>
           </div>
         </div>
