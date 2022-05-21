@@ -17,7 +17,7 @@ class Education extends Component {
     const education = (
       <>
         <div>
-          <h3>Virginia Polytechnic Insitute and State University</h3>
+          <h3>Virginia Tech</h3>
           <p className="info">
             Masters in Computer Science
             <em className="date" style={{ float: "right" }}>
