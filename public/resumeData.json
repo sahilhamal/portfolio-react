@@ -109,8 +109,8 @@
         "title": "Software Engineer Internship",
         "years": "May 2022 - Aug 2022",
         "location": "San Jose, CA",
-        "description": "Incoming full stack intern in Zoom Events Team. Planned to develop full stack applications.",
-        "technologies": "React, Java, Spring Boot, Docker, Kubernetes, Python, JavaScript, TypeScript"
+        "description": "Developing a video archive application that served as a platform to upload, view and play videos for Zoom Events. \n Creating tag based video searching system using technologies such as ElasticSearch.",
+        "technologies": "React, Java, Spring Boot, Docker, JavaScript, TypeScript, AWS, ElasticSearch, MongoDB"
       },
       {
         "company": "Johns Hopkins University",
