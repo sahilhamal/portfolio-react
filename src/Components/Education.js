@@ -36,6 +36,7 @@ class Education extends Component {
                 Spring 2022: CS 5040 Ethics and Professionalism in Computer
                 Science
               </li>
+              <li>Fall 2022: CS 2114 Software Design and Data Structures</li>
             </ul>
           </ul>
           {/* <p className="info">Fully funded Masters thesis.</p> */}
