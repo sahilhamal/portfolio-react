@@ -109,7 +109,7 @@
         "title": "Software Engineer Internship",
         "years": "May 2022 - Aug 2022",
         "location": "San Jose, CA",
-        "description": "Developing a video archive application that served as a platform to upload, view and play videos for Zoom Events. \n Creating tag based video searching system using technologies such as ElasticSearch.",
+        "description": "Developed a full stack video archive application that served as a platform to upload, search and play videos for Zoom Events. \n Created a tag based video searching and sorting system utilizing the ElasticSearch and store the videos using AWS and MongoDB.",
         "technologies": "React, Java, Spring Boot, Docker, JavaScript, TypeScript, AWS, ElasticSearch, MongoDB"
       },
       {
