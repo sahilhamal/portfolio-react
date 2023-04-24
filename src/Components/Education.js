@@ -26,8 +26,8 @@ class Education extends Component {
           </p>
           <ul>
             <li>
-              <strong>Thesis topic:</strong> Software Engineering and Digital
-              Education
+              <strong>Thesis topic:</strong> Interpreting Dimension Reductions
+              Through Gradient Visualization
             </li>
             <li>TA for following courses:</li>
             <ul>
