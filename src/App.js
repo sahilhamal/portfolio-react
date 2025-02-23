@@ -4,9 +4,7 @@ import $ from "jquery";
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import About from "./Components/About";
 import Education from "./Components/Education";
-import Contact from "./Components/Contact";
 import WorkExperience from "./Components/WorkExperience";
 
 class App extends Component {
@@ -45,7 +43,6 @@ class App extends Component {
         <Header data={this.state.resumeData.main} />
         <Education data={this.state.resumeData.resume} />
         <WorkExperience data={this.state.resumeData.resume} />
-        {/* <Contact data={this.state.resumeData.main} /> */}
         <Footer data={this.state.resumeData.main} />
       </div>
     );
