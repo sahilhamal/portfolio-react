@@ -76,6 +76,7 @@ class Header extends Component {
                 className="social"
                 download
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fa fa-envelope"> </i> Contact
               </a>
