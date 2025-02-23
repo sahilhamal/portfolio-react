@@ -7,7 +7,6 @@ class Header extends Component {
     if (!this.props.data) return null;
 
     const linkedIn = this.props.data.linkedIn;
-    const description = this.props.data.description;
 
     return (
       <header id="home">
@@ -66,14 +65,12 @@ class Header extends Component {
                 </a>
                 <a
                   href="Resume_SahilHamal.pdf"
-                  className="button"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <i className="fa fa-download"> </i> Resume
                 </a>
               </ul>
-              {/* #F1E2B0 */}
               <a
                 href="mailto: sahilhamal@vt.edu"
                 className="social"
