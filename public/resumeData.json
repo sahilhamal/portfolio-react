@@ -109,7 +109,7 @@
         "title": "Software Engineer II",
         "years": "May 2023 - Current",
         "location": "Washington, D.C.",
-        "description": "Optimized Analytics Dashboard: Streamlined event creation and enhanced user interaction, improving efficiency by 30%.\nScalable Backend Development: Designed and optimized backend APIs to handle millions of data points in real time, ensuring secure and seamless frontend integration.\nAdvanced Search Optimization: Reduced search latency by 40% through effective use of Redis caching and ElasticSearch indexing.\nEfficient Data Management: Engineered file upload processes and integrated CDNs for optimal data storage and rapid access.\nTechnologies Utilized: React, Java, Spring Boot, Redis, NoSQL, Docker, JavaScript, ElasticSearch, and Kafka.",
+        "description": "Optimized Analytics Dashboard: Streamlined event creation and enhanced user interaction, improving efficiency by 30%.\nScalable Backend Development: Designed and optimized backend APIs to handle millions of data points in real time, ensuring secure and seamless frontend integration.\nAdvanced Search Optimization: Reduced search latency by 40% through effective use of Redis caching and ElasticSearch indexing.\nEfficient Data Management: Engineered file upload processes and integrated CDNs for optimal data storage and rapid access.",
         "technologies": "React, Java, Spring Boot, Docker, JavaScript, TypeScript, AWS, ElasticSearch, MongoDB"
       },
       {
