@@ -50,7 +50,7 @@
       {
         "school": "Virginia Polytechnic Institute and State University",
         "degree": "Masters in Computer Science",
-        "graduation": "May 2023 (Expected)",
+        "graduation": "May 2023",
         "description": [
           "Thesis: Software Engineering and Digital Education.",
           "Fully funded 2-year masters."
@@ -104,6 +104,14 @@
       ]
     },
     "work": [
+      {
+        "company": "American Express",
+        "title": "Software Engineer II",
+        "years": "May 2023 - Current",
+        "location": "Washington, D.C.",
+        "description": "Optimized Analytics Dashboard: Streamlined event creation and enhanced user interaction, improving efficiency by 30%.\nScalable Backend Development: Designed and optimized backend APIs to handle millions of data points in real time, ensuring secure and seamless frontend integration.\nAdvanced Search Optimization: Reduced search latency by 40% through effective use of Redis caching and ElasticSearch indexing.\nEfficient Data Management: Engineered file upload processes and integrated CDNs for optimal data storage and rapid access.\nTechnologies Utilized: React, Java, Spring Boot, Redis, NoSQL, Docker, JavaScript, ElasticSearch, and Kafka.",
+        "technologies": "React, Java, Spring Boot, Docker, JavaScript, TypeScript, AWS, ElasticSearch, MongoDB"
+      },
       {
         "company": "Zoom Video Communications",
         "title": "Software Engineer Internship",

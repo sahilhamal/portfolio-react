@@ -26,24 +26,16 @@ class Header extends Component {
                 Home
               </a>
             </li>
-
             <li>
               <a className="smoothscroll" href="#resume">
                 Education
               </a>
             </li>
-
             <li>
               <a className="smoothscroll" href="#about">
                 Work Experience
               </a>
             </li>
-
-            {/* <li>
-              <a className="smoothscroll" href="#contact">
-                Contact
-              </a>
-            </li> */}
           </ul>
         </nav>
 
@@ -53,9 +45,7 @@ class Header extends Component {
               <h1 className="responsive-headline">Sahil Hamal</h1>
             </Fade>
             <Fade bottom duration={1200}>
-              <h3>
-                Software Engineer/Masters in Computer Science at Virginia Tech
-              </h3>
+              <h3>Software Engineer II at American Express</h3>
             </Fade>
             <hr />
             <Fade bottom duration={2000}>
@@ -67,7 +57,7 @@ class Header extends Component {
                   href="Resume_SahilHamal.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="button btn project-btn"
+                  className="button btn github-btn"
                 >
                   <i className="fa fa-download"> </i> Resume
                 </a>

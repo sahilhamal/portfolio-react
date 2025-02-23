@@ -2,15 +2,6 @@ import React, { Component } from "react";
 import Slide from "react-reveal";
 
 class Education extends Component {
-  getRandomColor() {
-    let letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
-
   render() {
     if (!this.props.data) return null;
 
@@ -21,13 +12,17 @@ class Education extends Component {
           <p className="info">
             Masters in Computer Science
             <em className="date" style={{ float: "right" }}>
-              Graduation: May 2023 (Expected)
+              Graduation: May 2023
             </em>
           </p>
           <ul>
             <li>
               <strong>Thesis topic:</strong> Interpreting Dimension Reductions
               Through Gradient Visualization
+            </li>
+            <li>
+              <strong>Award: </strong>Torgerson Oustanding Graduate Research
+              Award
             </li>
             <li>TA for following courses:</li>
             <ul>
@@ -37,9 +32,9 @@ class Education extends Component {
                 Science
               </li>
               <li>Fall 2022: CS 2114 Software Design and Data Structures</li>
+              <li>Spring 2023: CS 5040 Blockchain Technologies</li>
             </ul>
           </ul>
-          {/* <p className="info">Fully funded Masters thesis.</p> */}
         </div>
         <br></br>
         <div>

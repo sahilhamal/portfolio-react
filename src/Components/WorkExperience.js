@@ -20,8 +20,31 @@ class WorkExperience extends Component {
               </em>
             </p>
 
-            <p>{work.description}</p>
-            <p>Technologies: {work.technologies}</p>
+            <p>
+              {work.description.split("\n").map((line, index) => {
+                if (line.includes(":")) {
+                  const [title, ...rest] = line.split(":");
+                  return (
+                    <React.Fragment key={index}>
+                      <strong>{title}:</strong>
+                      {rest.join(":")}
+                      <br />
+                    </React.Fragment>
+                  );
+                } else {
+                  return (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  );
+                }
+              })}
+            </p>
+
+            <p>
+              Technologies: <strong>{work.technologies}</strong>
+            </p>
           </div>
         </>
       );
