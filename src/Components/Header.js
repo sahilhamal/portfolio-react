@@ -67,6 +67,7 @@ class Header extends Component {
                   href="Resume_SahilHamal.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="button btn project-btn"
                 >
                   <i className="fa fa-download"> </i> Resume
                 </a>
